@@ -17,7 +17,7 @@ limitations under the License.
 
 # Redfish iDRAC Secure Erase Terraform module
 
-Terraform module which runs ISE (Instant Scramble Erase) on physical disks managed by an Dell iDRAC.
+Terraform module which runs ISE (Instant Scramble Erase) on physical disks managed by a Dell iDRAC.
 
 This module is a wrapper around https://github.com/dell/iDRAC-Redfish-Scripting/blob/master/Redfish%20Python/SecureEraseDevicesREDFISH.py
 On `create`, the module fetches this script and uses it to check if the devices support ISE and fails if not.

@@ -47,10 +47,10 @@ Terraform modules package multiple resources together, allowing for efficient, m
 | <a name="requirement_idrac_firmware"></a> [Firmware](#requirement\_idrac_firmware) | >= 5.0, <= 7.0 |
 
 ## List of Submodules in Terraform Modules for Dell iDRAC
-  * [redfish_idrac_secure_erase](modules/redfish_idrac_secure_erase) Runs ISE (Instant Scramble Erase) on physical disks managed by an Dell iDRAC.
+  * [redfish_idrac_secure_erase](modules/redfish_idrac_secure_erase) Runs ISE (Instant Scramble Erase) on physical disks managed by a Dell iDRAC.
 
 ## Support
-For any Terraform Modules for Dell PowerFlex issues, questions or feedback, please follow our [support process](https://github.com/dell/dell-terraform-providers/blob/main/docs/SUPPORT.md)
+For any Terraform Modules for Dell iDRAC issues, questions or feedback, please follow our [support process](https://github.com/dell/dell-terraform-providers/blob/main/docs/SUPPORT.md)
 
 ## License
 

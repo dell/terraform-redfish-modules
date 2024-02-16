@@ -42,9 +42,10 @@ Terraform modules package multiple resources together, allowing for efficient, m
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_terraform"></a> [Terraform](#requirement\_terraform) | >= 1.5 |
 | <a name="requirement_idrac"></a> [iDRAC](#requirement\_idrac) | >= 9.0 |
-| <a name="requirement_idrac_firmware"></a> [Firmware](#requirement\_idrac_firmware) | >= 5.0, <= 7.0 |
+| <a name="requirement_idrac_firmware"></a> [iDRAC Firmware](#requirement\_idrac_firmware) | >= 5.0, <= 7.0 |
+| <a name="requirement_os"></a> [Operating System](#requirement\_os) | ubuntu22.04 or rhel8.x or rhel9.x |
 
 ## List of Submodules in Terraform Modules for Dell iDRAC
   * [redfish_idrac_secure_erase](modules/redfish_idrac_secure_erase) Runs ISE (Instant Scramble Erase) on physical disks managed by a Dell iDRAC.

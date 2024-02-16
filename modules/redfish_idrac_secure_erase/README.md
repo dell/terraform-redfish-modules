@@ -60,9 +60,7 @@ module "secure_erase" {
 
 ## Examples
 
-<!-- - [With physical disks](../../examples/secure-erase-physical-disks) with physical disks.
-- [With storgae controller id](../../examples/secure-erase-physical-disks) with storgae controller id.
-- [With storage controller name](../../examples/secure-erase-physical-disks) with storgae controller name. -->
+- [Secure Erase on multiple iDRACs with storage controller names](../../examples/secure-erase)
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

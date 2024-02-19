@@ -36,19 +36,19 @@ variable "ssl_verify" {
 }
 
 variable "pdisk_fqdds" {
-  description = "List of disk FQDDs to run secure erase on."
+  description = "List of disk FQDDs to run secure erase on. Must be specified if (and only if) `controller_names` and `controller_ids` is not specified."
   type = list(string)
   default = null
 }
 
 variable "controller_ids" {
-  description = "List of storage controller IDs to run secure erase on."
+  description = "List of storage controller IDs to run secure erase on. Must be specified if (and only if) `controller_names` and `controller_ids` is not specified."
   type = list(string)
   default = null  
 }
 
 variable "controller_names" {
-  description = "List of storage controller names to run secure erase on."
+  description = "List of storage controller names to run secure erase on. Must be specified if (and only if) `controller_names` and `controller_ids` is not specified."
   type = list(string)
   default = null
 }

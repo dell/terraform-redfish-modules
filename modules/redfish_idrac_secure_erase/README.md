@@ -24,6 +24,8 @@ On `create`, the module fetches this script and uses it to check if the devices 
 On `destroy`, it uses this script to run ISE on all the disks.
 The script, in turn, uses HTTPS Redfish API of the iDRAC.
 
+Note: Exactly one of `controller_names`, `controller_ids` and `pdisk_fqdds` is required.
+
 ## Prerequisites
 
 | Name | Version |
@@ -97,11 +99,11 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_controller_ids"></a> [controller\_ids](#input\_controller\_ids) | List of storage controller IDs to run secure erase on. | `list(string)` | `null` | no |
-| <a name="input_controller_names"></a> [controller\_names](#input\_controller\_names) | List of storage controller names to run secure erase on. | `list(string)` | `null` | no |
+| <a name="input_controller_ids"></a> [controller\_ids](#input\_controller\_ids) | List of storage controller IDs to run secure erase on. Must be specified if (and only if) `controller_names` and `controller_ids` is not specified. | `list(string)` | `null` | no |
+| <a name="input_controller_names"></a> [controller\_names](#input\_controller\_names) | List of storage controller names to run secure erase on. Must be specified if (and only if) `controller_names` and `controller_ids` is not specified. | `list(string)` | `null` | no |
 | <a name="input_hostname"></a> [hostname](#input\_hostname) | Hostname or IP of the iDRAC. | `string` | n/a | yes |
 | <a name="input_password"></a> [password](#input\_password) | Password of the iDRAC. | `string` | n/a | yes |
-| <a name="input_pdisk_fqdds"></a> [pdisk\_fqdds](#input\_pdisk\_fqdds) | List of disk FQDDs to run secure erase on. | `list(string)` | `null` | no |
+| <a name="input_pdisk_fqdds"></a> [pdisk\_fqdds](#input\_pdisk\_fqdds) | List of disk FQDDs to run secure erase on. Must be specified if (and only if) `controller_names` and `controller_ids` is not specified. | `list(string)` | `null` | no |
 | <a name="input_python3_path"></a> [python3\_path](#input\_python3\_path) | Path to python3 executable. Default is /usr/bin/python3. | `string` | `"/usr/bin/python3"` | no |
 | <a name="input_ssl_verify"></a> [ssl\_verify](#input\_ssl\_verify) | Whether to verify SSL certificate, default is true. | `bool` | `true` | no |
 | <a name="input_username"></a> [username](#input\_username) | Username of the iDRAC. | `string` | n/a | yes |

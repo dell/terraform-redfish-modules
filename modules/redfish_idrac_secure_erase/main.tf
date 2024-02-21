@@ -29,8 +29,8 @@ data "redfish_storage" "storage" {
       error_message = "When pdisk_fqdds is specified, controller_ids and controller_names cannot be specified."
     }
     precondition {
-      condition     = var.pdisk_fqdds == null ? var.controller_ids != null || var.controller_names == null : true
-      error_message = "When pdisk_fqdds not specified, either one of controller_ids and controller_names must be specified."
+      condition     = var.pdisk_fqdds == null ? var.controller_ids != null || var.controller_names != null : true
+      error_message = "When pdisk_fqdds is not specified, at least one of controller_ids and controller_names must be specified."
     }
   }
 }

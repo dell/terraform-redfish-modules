@@ -60,7 +60,7 @@ variable "python3_path" {
 }
 
 variable "working_directory" {
-  description = "Working directory for this module. The module will manage a temporary directory here, so this directory should have write permissions. Defaults to the current working directory."
+  description = "Working directory for this module. The module will manage a temporary directory here, so this directory should have write permissions. Defaults to the root module directory."
   type = string
   default = null
 }

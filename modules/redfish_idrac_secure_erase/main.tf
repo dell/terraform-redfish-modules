@@ -37,6 +37,7 @@ data "redfish_storage" "storage" {
 
 locals {
   pdisk_fqdds = var.pdisk_fqdds==null ? flatten(data.redfish_storage.storage.storage[*].drive_ids[*]) : var.pdisk_fqdds
+  tdir = var.working_directory == null ? path.root : var.working_directory
 }
 
 resource "random_id" "dir" {
@@ -45,7 +46,7 @@ resource "random_id" "dir" {
 
 resource "terraform_data" "git_repo" {
     input = {
-        dir = "${path.root}/${random_id.dir.b64_url}"
+        dir = "${local.tdir}/${random_id.dir.b64_url}"
     }
     provisioner "local-exec" {
         command = "mkdir -p ${self.output.dir}"
@@ -73,7 +74,8 @@ resource "terraform_data" "sec_erase" {
         }
         pdisk_fqdds = local.pdisk_fqdds
         python3_path = var.python3_path
-        script = "${var.python3_path} ${terraform_data.git_repo.output.dir}/code.py -ip ${var.hostname}"
+        wdir = terraform_data.git_repo.output.dir
+        script = "${var.python3_path} code.py -ip ${var.hostname}"
         cred_args = "-u $USER -p $PASS --ssl $SSL"
     }
     provisioner "local-exec" {
@@ -84,6 +86,7 @@ resource "terraform_data" "sec_erase" {
             %{ endfor ~}
         EOT
         environment = self.output.environment
+        working_dir = self.output.wdir
         quiet = true
     }
     provisioner "local-exec" {
@@ -95,6 +98,7 @@ resource "terraform_data" "sec_erase" {
             %{ endfor ~}
         EOT
         environment = self.output.environment
+        working_dir = self.output.wdir
         quiet = true
     }
 }

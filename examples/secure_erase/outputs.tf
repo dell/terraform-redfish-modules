@@ -15,6 +15,6 @@
 # limitations under the License.
 
 output "physical_disk_fqdds" {
-  description = "Map of iDRAC hostname to list of physical disk FQDDs on which secure erase would be run on destroy."
-  value = {for rack, v in module.secure_erase : rack => v.pdisk_fqdds}
+  description = "Map of iDRAC hostname/IP to list of physical disk FQDDs on which secure erase would be run on destroy."
+  value = {for rack, v in module.secure_erase : rack => v.physical_disk_fqdds}
 }

@@ -54,7 +54,13 @@ variable "controller_names" {
 }
 
 variable "python3_path" {
-  description = "Path to python3 executable. Default is /usr/bin/python3."
+  description = "Path to python3 executable."
   type = string
   default = "/usr/bin/python3"
+}
+
+variable "working_directory" {
+  description = "Working directory for this module. The module will manage a temporary directory here, so this directory should have write permissions. Defaults to the root module directory."
+  type = string
+  default = null
 }

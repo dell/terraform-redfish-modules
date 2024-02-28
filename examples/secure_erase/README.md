@@ -85,5 +85,5 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_physical_disk_fqdds"></a> [physical\_disk\_fqdds](#output\_physical\_disk\_fqdds) | Map of iDRAC hostname to list of physical disk FQDDs on which secure erase would be run on destroy. |
+| <a name="output_physical_disk_fqdds"></a> [physical\_disk\_fqdds](#output\_physical\_disk\_fqdds) | Map of iDRAC hostname/IP to list of physical disk FQDDs on which secure erase would be run on destroy. |
 <!-- END_TF_DOCS -->

@@ -106,9 +106,10 @@ No modules.
 | <a name="input_hostname"></a> [hostname](#input\_hostname) | Hostname or IP of the iDRAC. | `string` | n/a | yes |
 | <a name="input_password"></a> [password](#input\_password) | Password of the iDRAC. | `string` | n/a | yes |
 | <a name="input_pdisk_fqdds"></a> [pdisk\_fqdds](#input\_pdisk\_fqdds) | List of disk FQDDs to run secure erase on. Must be specified if `controller_names` and `controller_ids` are not specified. Conflicts with `controller_names` and `controller_ids`. | `list(string)` | `null` | no |
-| <a name="input_python3_path"></a> [python3\_path](#input\_python3\_path) | Path to python3 executable. Default is /usr/bin/python3. | `string` | `"/usr/bin/python3"` | no |
+| <a name="input_python3_path"></a> [python3\_path](#input\_python3\_path) | Path to python3 executable. | `string` | `"/usr/bin/python3"` | no |
 | <a name="input_ssl_verify"></a> [ssl\_verify](#input\_ssl\_verify) | Whether to verify SSL certificate, default is true. | `bool` | `true` | no |
 | <a name="input_username"></a> [username](#input\_username) | Username of the iDRAC. | `string` | n/a | yes |
+| <a name="input_working_directory"></a> [working\_directory](#input\_working\_directory) | Working directory for this module. The module will manage a temporary directory here, so this directory should have write permissions. Defaults to the root module directory. | `string` | `null` | no |
 
 ## Outputs
 

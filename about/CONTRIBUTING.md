@@ -118,7 +118,7 @@ $ git commit -S -m your commit message
 
 ### Commit message format
 
-Terraform provider for Dell iDRAC Redfish uses the guidelines for commit messages outlined in [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+Terraform module for Dell iDRAC Redfish uses the guidelines for commit messages outlined in [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
 ## Pull requests
 

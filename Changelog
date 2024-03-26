@@ -1,0 +1,15 @@
+# v1.0.0 (March, 2024)
+## Release Summary
+The release supports modules mentioned in the Features section for Dell iDRAC Redfish.
+## Features
+
+### Modules
+* `idrac_secure_erase` for running ISE (Instant Scramble Erase) on physical disks managed by a Dell iDRAC.
+
+### Others
+N/A
+## Enhancements
+N/A
+
+## Bug Fixes
+N/A

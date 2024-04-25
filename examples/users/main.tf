@@ -14,7 +14,7 @@
 # limitations under the License.
 
 module "users" {
-    source = "../../modules/redfish_multiple_user"
+    source = "../../modules/redfish_users"
 
     idracs = var.idracs
     idrac_local_users = var.idrac_local_users

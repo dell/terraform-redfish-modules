@@ -25,7 +25,7 @@ terraform.tfvars
 ```hcl
 module "users" {
 
-    source = "../../modules/redfish_multiple_user"
+    source = "../../modules/redfish_users"
     
     # idracs and their credentials
     idracs = [
@@ -102,7 +102,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_users"></a> [users](#module\_users) | ../../modules/redfish_multiple_user | n/a |
+| <a name="module_users"></a> [users](#module\_users) | ../../modules/redfish_users | n/a |
 
 ## Resources
 

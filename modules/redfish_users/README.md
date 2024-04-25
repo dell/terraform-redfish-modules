@@ -40,7 +40,7 @@ See [`examples`](../../examples) directory for working examples to reference:
 ```hcl
 module "users" {
 
-    source = "../../modules/redfish_multiple_user"
+    source = "../../modules/redfish_users"
     
     # idracs and their credentials
     idracs = [

@@ -49,6 +49,7 @@ Terraform modules package multiple resources together, allowing for efficient, m
 
 ## List of Submodules in Terraform Modules for Dell iDRAC
   * [redfish_idrac_secure_erase](modules/redfish_idrac_secure_erase) Runs ISE (Instant Scramble Erase) on physical disks managed by a Dell iDRAC.
+  * [redfish_users](modules/redfish_users) Enables create/delete/modify operation for multiple users.
 
 ## Support
 For any Terraform Modules for Dell iDRAC issues, questions or feedback, please follow our [support process](https://github.com/dell/dell-terraform-providers/blob/main/docs/SUPPORT.md)

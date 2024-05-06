@@ -64,7 +64,7 @@ module "secure_erase" {
 
 ## Examples
 
-- [Secure Erase on multiple iDRACs with storage controller names](../../examples/secure-erase)
+- [Secure Erase on multiple iDRACs with storage controller names](../../examples/secure_erase)
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

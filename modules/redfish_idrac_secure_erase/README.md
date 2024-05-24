@@ -24,9 +24,9 @@ On `create`, the module fetches this script and uses it to check if the devices 
 On `destroy`, it uses this script to run ISE on all the disks.
 The script, in turn, uses HTTPS Redfish API of the iDRAC.
 
-Note: Atleast one of `controller_names`, `controller_ids` and `pdisk_fqdds` is required.
+~> **Note:** Atleast one of `controller_names`, `controller_ids` and `pdisk_fqdds` is required.
 
-Note: `pdisk_fqdds` cannot be specified along with `controller_names` or `controller_ids` but `controller_names` and `controller_ids` can be specified together.
+~> **Note:** `pdisk_fqdds` cannot be specified along with `controller_names` or `controller_ids` but `controller_names` and `controller_ids` can be specified together.
 
 ## Prerequisites
 

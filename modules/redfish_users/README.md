@@ -23,7 +23,11 @@ This module is a wrapper around https://github.com/dell/terraform-provider-redfi
 On `create`, the module creates users one by one, using the Terraform Provider for Redfish User Account.
 On `destroy`, it uses the user Account to remove the user(s).
 
-Note: users is a list of user, atleast one user is required.
+~> **Note:** users is a list of user, atleast one user is required.
+
+~> **Note:** User resource can be used to create, update role and delete a single user from the server. 
+
+~> **Note:** In order to change the password for a root/admin user, user account password resource can be used.
 
 ## Prerequisites
 

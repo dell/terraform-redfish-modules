@@ -1,3 +1,19 @@
+# v1.1.0 (May, 2024)
+## Release Summary
+The release supports modules mentioned in the Features section for Dell iDRAC Redfish.
+## Features
+
+### Modules
+* `users` for managing multiple users on a Dell iDRAC.
+
+### Others
+N/A
+## Enhancements
+N/A
+
+## Bug Fixes
+N/A
+
 # v1.0.0 (March, 2024)
 ## Release Summary
 The release supports modules mentioned in the Features section for Dell iDRAC Redfish.

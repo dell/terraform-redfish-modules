@@ -1,0 +1,30 @@
+# nonk8s
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dell-terraform-redfish-modules
+  description: "Terraform Modules for Dell iDRAC"
+  tags:
+    - devops
+    - automation
+    - terraform
+    - dell
+    - infrastructure-as-code
+    - terraform-modules
+    - redfish
+    - idrac
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: dell/terraform-redfish-modules
+  links:   
+    - url: 'https://dell.github.io/terraform-docs/modules/server/platforms/redfish/'
+      title: 'Documentation for RedFish Modules'
+      icon: 'web'
+    - url: 'https://github.com/dell/terraform-redfish-modules/issues'
+      title: 'Contact Technical Support'
+      icon: 'help'
+spec:
+  type: service
+  lifecycle: production
+  owner: user:default/varun.chinta
+  visibility: all
